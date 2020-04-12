@@ -48,10 +48,24 @@ class Student {
 
 	public double getAverage() {
 		//TODO
-
+		int l,i,br=0;
+		l=grades.length;
+		for(i=0;i<l;i++){
+			br+=grades[i];
+		}
+		br=br/l;
+		return br;
 	}
 
 	public int ECTSCredits() {
 		//TODO
+		int l,i,br=0;
+		l=grades.length;
+		for(i=0;i<l;i++){
+			if(grades[i]>5) {
+				br += 6;
+			}
+		}
+		return br;
 	}
 }
