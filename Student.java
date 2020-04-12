@@ -69,3 +69,28 @@ class Student {
 		return br;
 	}
 }
+class Faculty {
+	ArrayList<String> studenti = new ArrayList<>();
+	String fakultet;
+
+	public Faculty(String fakultet) {
+		this.fakultet = fakultet;
+	}
+
+	public void studentiadd(Student studenti){
+		studenti.add(a);
+	}
+	public void studentiremove(Student studenti){
+		studenti.remove(a);
+	}
+	public double getAverage() {
+		int l,i,br=0;
+		l=studenti.length;
+		for(i=0;i<l;i++){
+			br+=studenti.get(i);
+		}
+		br=br/l;
+		return br;
+	}
+}
+
